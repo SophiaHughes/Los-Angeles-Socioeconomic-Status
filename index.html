@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Los Angeles Socioeconomic Map</title>
+
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.20.0/mapbox-gl.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <h1>Los Angeles Socioeconomic Map</h1>
+    <p>Compare socioeconomic patterns across West, Central, and East LA</p>
+  </header>
+
+  <main class="app">
+    <section id="map"></section>
+
+    <aside class="sidebar">
+      <h2>Legend</h2>
+
+      <div class="legend">
+        <div class="legend-row"><span class="swatch west"></span> West LA (Low poverty)</div>
+        <div class="legend-row"><span class="swatch central"></span> Central LA (Moderate)</div>
+        <div class="legend-row"><span class="swatch east"></span> East LA (High poverty)</div>
+      </div>
+
+      <div id="info" class="info">
+        <h3>Region info</h3>
+        <p>Hover over a region</p>
+      </div>
+    </aside>
+  </main>
+
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.20.0/mapbox-gl.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
