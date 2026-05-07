@@ -102,6 +102,8 @@ body {
 .west    { background: #6ec6e6; }  /* visible blue instead of near-white */
 .central { background: #8c96c6; }
 .east    { background: #810f7c; }
+.north { background: #6abf8a; }
+.south { background: #e07b39; }
 
 /* ── Divider ── */
 .sidebar hr {
