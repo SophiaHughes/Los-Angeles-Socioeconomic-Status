@@ -160,7 +160,7 @@ window.onload = () => {
                 30, '#1e6b40'
               ],
               // EAST LA — magenta family
-            [' == ', ['get', 'region'], 'East LA'],
+            ['==', ['get', 'region'], 'East LA'],
               ['interpolate', ['linear'], ['get', 'poverty_pct'],
               14, '#f5d0f0',
               22, '#c060b0',
