@@ -107,10 +107,9 @@ window.onload = () => {
     container: 'map',
     style: 'mapbox://styles/mapbox/light-v11',
     center: [-118.2437, 34.0522],
-    zoom: 9.5
+    zoom: 9.5,
+    interactive: false
   });
-
-  map.addControl(new mapboxgl.NavigationControl(), 'top-right');
 
   map.on('load', () => {
     const info = document.getElementById('info');
