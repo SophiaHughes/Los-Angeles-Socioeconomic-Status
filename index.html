@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Los Angeles Socioeconomic Map</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 
@@ -23,12 +24,12 @@
       <h2>Legend</h2>
 
       <div class="legend">
-  <div class="legend-row"><span class="swatch west"></span> West LA</div>
-  <div class="legend-row"><span class="swatch central"></span> Central LA</div>
-  <div class="legend-row"><span class="swatch north"></span> North LA</div>
-  <div class="legend-row"><span class="swatch east"></span> East LA</div>
-  <div class="legend-row"><span class="swatch south"></span> South LA</div>
-</div>
+        <div class="legend-gradient"></div>
+        <div class="legend-labels">
+          <span>Low (~4%)</span>
+          <span>High (~36%)</span>
+        </div>
+      </div>
 
       <div id="info" class="info">
         <h3>Region info</h3>
@@ -40,4 +41,5 @@
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.20.0/mapbox-gl.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>

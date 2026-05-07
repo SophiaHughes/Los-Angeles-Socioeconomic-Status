@@ -105,6 +105,19 @@ body {
 .north { background: #6abf8a; }
 .south { background: #e07b39; }
 
+.legend-gradient {
+  height: 16px;
+  border-radius: 8px;
+  background: linear-gradient(to right, #f7f4ff, #cfc8f0, #9e8fd8, #6b3fa0, #2d0057);
+  margin-bottom: 6px;
+}
+.legend-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  color: #64748b;
+}
+
 /* ── Divider ── */
 .sidebar hr {
   border: none;
