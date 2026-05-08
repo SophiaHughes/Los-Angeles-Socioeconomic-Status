@@ -107,7 +107,7 @@ window.onload = () => {
     container: 'map',
     style: 'mapbox://styles/mapbox/light-v11',
     center: [-118.35, 34.15],
-    zoom: 9.0,
+    zoom: 9.3,
     interactive: false
   });
 
