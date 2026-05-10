@@ -232,45 +232,57 @@ const neighborhoodData = {
   "Mission Hills": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 20.1, sf_pct: 66 },
   "Sepulveda": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 21.2, sf_pct: 44 },
   "Van Nuys": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 24.7, sf_pct: 38 },
-"Toluca Lake":             { region:"North LA",   status:"Higher income / lower poverty",   poverty_pct:9.8,  sf_pct:62 },
-  "Toluca Terrace":          { region:"North LA",   status:"Mixed income / moderate poverty", poverty_pct:14.2, sf_pct:58 },
-  "Toluca Woods":            { region:"North LA",   status:"Mixed income / moderate poverty", poverty_pct:12.8, sf_pct:61 },
-  "Hollywood Knolls":        { region:"North LA",   status:"Mixed income / moderate poverty", poverty_pct:11.4, sf_pct:74 },
-  "Beachwood Canyon":        { region:"North LA",   status:"Mixed income / moderate poverty", poverty_pct:12.1, sf_pct:68 },
-  "Whitley Heights":         { region:"Central LA", status:"Mixed income / moderate poverty", poverty_pct:14.8, sf_pct:62 },
-  "Franklin Hills":          { region:"Central LA", status:"Mixed income / moderate poverty", poverty_pct:13.2, sf_pct:54 },
-  "Laughlin Park":           { region:"Central LA", status:"Higher income / lower poverty",   poverty_pct:7.4,  sf_pct:81 },
-  "Spaulding Square":        { region:"Central LA", status:"Mixed income / moderate poverty", poverty_pct:14.1, sf_pct:58 },
-  "West Adams Heights":      { region:"South LA",   status:"Mixed income / moderate poverty", poverty_pct:21.8, sf_pct:52 },
-  "Baldwin Hills":           { region:"South LA",   status:"Mixed income / moderate poverty", poverty_pct:19.4, sf_pct:58 },
-  "Baldwin Hills Estates":   { region:"South LA",   status:"Higher income / lower poverty",   poverty_pct:11.2, sf_pct:74 },
-  "Leimert Park":            { region:"South LA",   status:"Mixed income / moderate poverty", poverty_pct:22.4, sf_pct:42 },
-  "Vermont Knolls":          { region:"South LA",   status:"Lower income / higher poverty",   poverty_pct:30.1, sf_pct:42 },
-  "Vermont Square":          { region:"South LA",   status:"Lower income / higher poverty",   poverty_pct:31.2, sf_pct:22 },
-  "Westlake South":          { region:"Central LA", status:"Mixed income / moderate poverty", poverty_pct:31.4, sf_pct:8  },
-  "Elysian Valley":          { region:"Central LA", status:"Mixed income / moderate poverty", poverty_pct:18.9, sf_pct:44 },
-  "Elysian Park":            { region:"Central LA", status:"Mixed income / moderate poverty", poverty_pct:20.1, sf_pct:38 },
-  "Angelino Heights":        { region:"Central LA", status:"Mixed income / moderate poverty", poverty_pct:22.4, sf_pct:42 },
-  "Victor Heights":          { region:"Central LA", status:"Mixed income / moderate poverty", poverty_pct:21.8, sf_pct:36 },
-  "Solano Canyon":           { region:"Central LA", status:"Mixed income / moderate poverty", poverty_pct:19.4, sf_pct:41 },
-  "Boyle":                   { region:"East LA",    status:"Lower income / higher poverty",   poverty_pct:26.8, sf_pct:32 },
-  "El Encanto Heights":      { region:"East LA",    status:"Mixed income / moderate poverty", poverty_pct:18.4, sf_pct:58 },
-  "Hermon":                  { region:"North LA",   status:"Mixed income / moderate poverty", poverty_pct:16.8, sf_pct:54 },
-  "Garvanza":                { region:"North LA",   status:"Mixed income / moderate poverty", poverty_pct:19.2, sf_pct:48 },
-  "Ramona":                  { region:"East LA",    status:"Lower income / higher poverty",   poverty_pct:24.8, sf_pct:38 },
-  "Willow Brook":            { region:"South LA",   status:"Lower income / higher poverty",   poverty_pct:32.4, sf_pct:36 },
-  "Watts":                   { region:"South LA",   status:"Lower income / higher poverty",   poverty_pct:35.8, sf_pct:38 },
-  "Compton":                 { region:"South LA",   status:"Lower income / higher poverty",   poverty_pct:29.5, sf_pct:48 },
+  "Toluca Lake": { region: "North LA", status: "Higher income / lower poverty", poverty_pct: 9.8, sf_pct: 62 },
+  "Toluca Terrace": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 14.2, sf_pct: 58 },
+  "Toluca Woods": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 12.8, sf_pct: 61 },
+  "Hollywood Knolls": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 11.4, sf_pct: 74 },
+  "Beachwood Canyon": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 12.1, sf_pct: 68 },
+  "Whitley Heights": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 14.8, sf_pct: 62 },
+  "Franklin Hills": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 13.2, sf_pct: 54 },
+  "Laughlin Park": { region: "Central LA", status: "Higher income / lower poverty", poverty_pct: 7.4, sf_pct: 81 },
+  "Spaulding Square": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 14.1, sf_pct: 58 },
+  "West Adams Heights": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 21.8, sf_pct: 52 },
+  "Baldwin Hills": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 19.4, sf_pct: 58 },
+  "Baldwin Hills Estates": { region: "South LA", status: "Higher income / lower poverty", poverty_pct: 11.2, sf_pct: 74 },
+  "Leimert Park": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 22.4, sf_pct: 42 },
+  "Vermont Knolls": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 30.1, sf_pct: 42 },
+  "Vermont Square": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 31.2, sf_pct: 22 },
+  "Westlake South": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 31.4, sf_pct: 8 },
+  "Elysian Valley": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 18.9, sf_pct: 44 },
+  "Elysian Park": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 20.1, sf_pct: 38 },
+  "Angelino Heights": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 22.4, sf_pct: 42 },
+  "Victor Heights": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 21.8, sf_pct: 36 },
+  "Solano Canyon": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 19.4, sf_pct: 41 },
+  "Boyle": { region: "East LA", status: "Lower income / higher poverty", poverty_pct: 26.8, sf_pct: 32 },
+  "El Encanto Heights": { region: "East LA", status: "Mixed income / moderate poverty", poverty_pct: 18.4, sf_pct: 58 },
+  "Hermon": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 16.8, sf_pct: 54 },
+  "Garvanza": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 19.2, sf_pct: 48 },
+  "Ramona": { region: "East LA", status: "Lower income / higher poverty", poverty_pct: 24.8, sf_pct: 38 },
+  "Willow Brook": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 32.4, sf_pct: 36 },
+  "Watts": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 35.8, sf_pct: 38 },
+  "Compton": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 29.5, sf_pct: 48 },
 };
 
 window.onload = () => {
   const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/light-v11',
-    center: [-118.42, 34.05],
-    zoom: 9.0,
-    interactive: false
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/light-v11',
+      center: [-118.42, 34.05],
+      zoom: 9.0,
+      minZoom: 8.8,      // ← can't zoom out past this
+      maxZoom: 13,       // ← can't zoom in past this
+      interactive: true  // ← re-enable interaction so zoom works
+    }),
   });
+
+  map.addControl(new mapboxgl.NavigationControl(), 'top-right');
+  map.dragPan.disable();
+  map.dragRotate.disable();
+  map.keyboard.disable();
+
 
   map.on('load', () => {
     const info = document.getElementById('info');
