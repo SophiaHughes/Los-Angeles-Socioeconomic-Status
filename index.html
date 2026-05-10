@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Los Angeles Socioeconomic Map</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-
   <link href="https://api.mapbox.com/mapbox-gl-js/v3.20.0/mapbox-gl.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -24,33 +23,19 @@
       <h2>Legend</h2>
 
       <div class="legend">
-        <div class="legend-row">
-          <div class="swatch-gradient west-grad"></div> West LA
-        </div>
-        <div class="legend-row">
-          <div class="swatch-gradient central-grad"></div> Central LA
-        </div>
-        <div class="legend-row">
-          <div class="swatch-gradient north-grad"></div> North LA
-        </div>
-        <div class="legend-row">
-          <div class="swatch-gradient east-grad"></div> East LA
-        </div>
-        <div style="margin-top:14px; border-top:1px solid #e2e8f0; padding-top:12px;">
-          <div class="legend-row">
-            <div class="swatch-stripe"></div>
-            <span>Majority single-family</span>
-          </div>
-          <div class="legend-row">
-            <div class="swatch-solid"></div>
-            <span>Majority multi-family</span>
-          </div>
-        </div>
-        <div class="legend-row">
-          <div class="swatch-gradient south-grad"></div> South LA
-        </div>
+        <div class="legend-row"><div class="swatch-gradient west-grad"></div> West LA</div>
+        <div class="legend-row"><div class="swatch-gradient central-grad"></div> Central LA</div>
+        <div class="legend-row"><div class="swatch-gradient north-grad"></div> North LA</div>
+        <div class="legend-row"><div class="swatch-gradient east-grad"></div> East LA</div>
+        <div class="legend-row"><div class="swatch-gradient south-grad"></div> South LA</div>
         <div class="legend-labels"><span>Low poverty</span><span>High poverty</span></div>
+
+        <hr style="border:none; border-top:1px solid #e2e8f0; margin: 10px 0;" />
+
+        <div class="legend-row"><div class="swatch-stripe"></div> Majority single-family</div>
+        <div class="legend-row"><div class="swatch-solid"></div> Majority multi-family</div>
       </div>
+
       <div id="info" class="info">
         <h3>Region info</h3>
         <p>Hover over a region</p>
