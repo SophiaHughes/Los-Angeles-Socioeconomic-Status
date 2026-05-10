@@ -267,15 +267,15 @@ window.onload = () => {
   const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/light-v11',
-      center: [-118.35, 34.05],
+      center: [-118.30, 34.05],
       zoom: 9.0,
-      minZoom: 8.5,      // ← can't zoom out past this
+      minZoom: 8.0,      // ← can't zoom out past this
       maxZoom: 13,       // ← can't zoom in past this
       interactive: true  // ← re-enable interaction so zoom works
   });
 
   map.addControl(new mapboxgl.NavigationControl(), 'top-right');
-  map.dragPan.disable();
+  map.dragPan.enable();
   map.dragRotate.disable();
   map.keyboard.disable();
 
