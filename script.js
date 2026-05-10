@@ -265,9 +265,6 @@ const neighborhoodData = {
 
 window.onload = () => {
   const map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/light-v11',
-    const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/light-v11',
       center: [-118.42, 34.05],
@@ -275,7 +272,6 @@ window.onload = () => {
       minZoom: 8.8,      // ← can't zoom out past this
       maxZoom: 13,       // ← can't zoom in past this
       interactive: true  // ← re-enable interaction so zoom works
-    }),
   });
 
   map.addControl(new mapboxgl.NavigationControl(), 'top-right');
