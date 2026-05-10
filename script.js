@@ -1,7 +1,6 @@
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2h1Z2hlczU4IiwiYSI6ImNtb2tzanJxajAzaXkyb3B5YTU0YWo0dncifQ.hhJVBWVqUoE40kEsf0tPfQ';
 
 const neighborhoodData = {
-  const neighborhoodData = {
     // WEST LA — mostly single-family
     "Bel Air": { region: "West LA", status: "Higher income / lower poverty", poverty_pct: 4.2, sf_pct: 88 },
     "Brentwood": { region: "West LA", status: "Higher income / lower poverty", poverty_pct: 5.1, sf_pct: 72 },
@@ -110,8 +109,7 @@ const neighborhoodData = {
     "Hyde Park": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 24.1, sf_pct: 48 },
     "Vermont Square": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 31.2, sf_pct: 22 },
     "Vermont Vista": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 29.8, sf_pct: 28 },
-  }
-};
+  };
 
 window.onload = () => {
   const map = new mapboxgl.Map({
@@ -221,7 +219,7 @@ window.onload = () => {
           hoveredId = f.id;
           map.setFeatureState({ source: 'la-neighborhoods', id: hoveredId }, { hover: true });
           info.innerHTML = `
-            < h3 > ${f.properties.name}</h3 >
+            <h3> ${f.properties.name}</h3>
   <p><strong>Region:</strong> ${f.properties.region}</p>
   <p>${f.properties.status}</p>
   <p><strong>Poverty rate:</strong> ${f.properties.poverty_pct}%</p>
