@@ -129,13 +129,16 @@ window.onload = () => {
     stripeCanvas.width = 8;
     stripeCanvas.height = 8;
     const ctx = stripeCanvas.getContext('2d');
-    ctx.strokeStyle = 'rgba(255,255,255,0.5)';
+    ctx.fillStyle = 'rgba(0,0,0,0)';
+    ctx.fillRect(0, 0, 8, 8);
+    ctx.strokeStyle = 'rgba(255,255,255,0.6)';
     ctx.lineWidth = 1.5;
     ctx.beginPath();
     ctx.moveTo(0, 8);
     ctx.lineTo(8, 0);
     ctx.stroke();
-    map.addImage('stripe-pattern', stripeCanvas);
+    const imageData = ctx.getImageData(0, 0, 8, 8);
+    map.addImage('stripe-pattern', { width: 8, height: 8, data: imageData.data });
 
     fetch('./neighborhoods.geojson')
       .then(r => r.json())
