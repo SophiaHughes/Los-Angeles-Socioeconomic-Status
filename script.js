@@ -197,6 +197,18 @@ const neighborhoodData = {
   "Rolling Hills Estates": { region: "South LA", status: "Higher income / lower poverty", poverty_pct: 4.8, sf_pct: 88 },
   "Palos Verdes Estates": { region: "South LA", status: "Higher income / lower poverty", poverty_pct: 3.9, sf_pct: 91 },
   "Rancho Palos Verdes": { region: "South LA", status: "Higher income / lower poverty", poverty_pct: 4.2, sf_pct: 86 },
+
+  // Newly visible grey neighborhoods
+  "Valley Village":          { region:"North LA",   status:"Mixed income / moderate poverty", poverty_pct:14.2, sf_pct:52 },
+  "Lake Balboa":             { region:"North LA",   status:"Mixed income / moderate poverty", poverty_pct:16.8, sf_pct:64 },
+  "Beverly Crest":           { region:"West LA",    status:"Higher income / lower poverty",   poverty_pct:5.2,  sf_pct:82 },
+  "Del Rey":                 { region:"West LA",    status:"Higher income / lower poverty",   poverty_pct:11.4, sf_pct:38 },
+  "Chatsworth Reservoir":    { region:"North LA",   status:"Higher income / lower poverty",   poverty_pct:6.1,  sf_pct:84 },
+  "Central-Alameda":         { region:"South LA",   status:"Lower income / higher poverty",   poverty_pct:33.4, sf_pct:28 },
+  "Chesterfield Square":     { region:"South LA",   status:"Lower income / higher poverty",   poverty_pct:30.8, sf_pct:42 },
+  "Broadway-Manchester":     { region:"South LA",   status:"Lower income / higher poverty",   poverty_pct:31.2, sf_pct:36 },
+  "West Adams":              { region:"Central LA", status:"Mixed income / moderate poverty", poverty_pct:18.4, sf_pct:44 },
+  "Winnetka":                { region:"North LA",   status:"Mixed income / moderate poverty", poverty_pct:16.8, sf_pct:58 },
 };
 
 window.onload = () => {
