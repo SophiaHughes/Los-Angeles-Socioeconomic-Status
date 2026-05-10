@@ -267,7 +267,7 @@ window.onload = () => {
   const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/light-v11',
-      center: [-118.40, 34.05],
+      center: [-118.48, 34.05],
       zoom: 9.0,
       minZoom: 8.5,      // ← can't zoom out past this
       maxZoom: 13,       // ← can't zoom in past this
