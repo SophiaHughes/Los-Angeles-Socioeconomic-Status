@@ -203,7 +203,7 @@ window.onload = () => {
   const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/light-v11',
-    center: [-118.42, 34.13],
+    center: [-118.42, 34.05],
     zoom: 9.0,
     interactive: false
   });
