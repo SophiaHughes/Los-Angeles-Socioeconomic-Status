@@ -48,75 +48,90 @@ body {
   box-shadow: 0 6px 28px rgba(0,0,0,0.13);
 }
 
+/* ── Sidebar ── */
 .sidebar {
   width: 270px;
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(10px);
-  padding: 22px 20px;
-  border-radius: 20px;
-  box-shadow: 0 6px 28px rgba(0,0,0,0.10);
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
   height: fit-content;
   align-self: flex-start;
 }
 
-/* ── Legend section titles ── */
+/* ── Each box ── */
+.legend-box {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  padding: 16px 18px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
 .legend-title {
   font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #64748b;
-  margin: 0 0 10px;
+  margin: 0 0 12px;
 }
 
-/* ── Poverty legend ── */
+/* ── Poverty bars ── */
 .legend-region {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-bottom: 4px;
 }
 
 .legend-row {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  font-size: 0.82rem;
-  color: #334155;
+  gap: 3px;
 }
 
 .legend-region-label {
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   color: #334155;
 }
 
 .swatch-gradient {
   width: 100%;
-  height: 12px;
-  border-radius: 6px;
+  height: 10px;
+  border-radius: 5px;
 }
+
+.west-grad    { background: linear-gradient(to right, #dff4fb, #2a8fb5); }
+.central-grad { background: linear-gradient(to right, #dfe2f5, #2e3a8c); }
+.north-grad   { background: linear-gradient(to right, #dff5e8, #1e6b40); }
+.east-grad    { background: linear-gradient(to right, #f5d0f0, #6b0060); }
+.south-grad   { background: linear-gradient(to right, #fdebd8, #8c3500); }
 
 .legend-axis {
   display: flex;
   justify-content: space-between;
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   color: #94a3b8;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
-/* Fix housing type rows to stay horizontal */
-.legend-housing .legend-row {
-  flex-direction: row;
+/* ── Housing type ── */
+.legend-housing {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.legend-row-housing {
+  display: flex;
   align-items: center;
   gap: 10px;
+  font-size: 0.85rem;
+  color: #334155;
 }
 
 .swatch-stripe {
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
   border-radius: 4px;
   flex-shrink: 0;
   background: repeating-linear-gradient(
@@ -125,27 +140,22 @@ body {
 }
 
 .swatch-solid {
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
   border-radius: 4px;
   flex-shrink: 0;
   background: #bbb;
 }
 
-/* ── Divider ── */
-.sidebar hr {
-  border: none;
-  border-top: 1px solid #e2e8f0;
-  margin: 0;
-}
-
 /* ── Info Panel ── */
 .info {
-  background: #f8fafc;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
   border: 1px solid #e2e8f0;
-  border-radius: 14px;
-  padding: 14px 16px;
+  border-radius: 16px;
+  padding: 16px 18px;
   min-height: 160px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 
 .info h3 {
@@ -153,6 +163,13 @@ body {
   font-size: 1rem;
   font-weight: 700;
   color: #1e3a5f;
+}
+
+.info p {
+  margin: 0 0 4px;
+  font-size: 0.85rem;
+  color: #475569;
+  line-height: 1.5;
 }
 
 .info-region {
@@ -183,7 +200,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 0.85rem;
-  padding: 4px 0;
+  padding: 5px 0;
   border-top: 1px solid #f1f5f9;
 }
 
@@ -191,16 +208,6 @@ body {
 .info-value { font-weight: 600; color: #1e3a5f; }
 
 /* ── Mapbox ── */
-.mapboxgl-popup-content {
-  border-radius: 14px !important;
-  padding: 14px 18px !important;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.14) !important;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  font-size: 0.88rem;
-  color: #334155;
-  line-height: 1.6;
-}
-
 .mapboxgl-ctrl-group {
   border-radius: 12px !important;
   overflow: hidden;
