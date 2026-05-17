@@ -20,40 +20,60 @@
     <section id="map"></section>
 
     <aside class="sidebar">
-      <h2>Legend</h2>
 
-      <div class="legend">
-        <div class="legend-row">
-          <div class="swatch-gradient west-grad"></div> West LA
+      <div>
+        <p class="legend-title">Poverty Level</p>
+        <div class="legend-region">
+          <div class="legend-row">
+            <span class="legend-region-label">West LA</span>
+            <div class="swatch-gradient west-grad"></div>
+          </div>
+          <div class="legend-row">
+            <span class="legend-region-label">Central LA</span>
+            <div class="swatch-gradient central-grad"></div>
+          </div>
+          <div class="legend-row">
+            <span class="legend-region-label">North LA</span>
+            <div class="swatch-gradient north-grad"></div>
+          </div>
+          <div class="legend-row">
+            <span class="legend-region-label">East LA</span>
+            <div class="swatch-gradient east-grad"></div>
+          </div>
+          <div class="legend-row">
+            <span class="legend-region-label">South LA</span>
+            <div class="swatch-gradient south-grad"></div>
+          </div>
         </div>
-        <div class="legend-row">
-          <div class="swatch-gradient central-grad"></div> Central LA
-        </div>
-        <div class="legend-row">
-          <div class="swatch-gradient north-grad"></div> North LA
-        </div>
-        <div class="legend-row">
-          <div class="swatch-gradient east-grad"></div> East LA
-        </div>
-        <div class="legend-row">
-          <div class="swatch-gradient south-grad"></div> South LA
-        </div>
-        <div class="legend-labels"><span>Low poverty</span><span>High poverty</span></div>
-
-        <hr style="border:none; border-top:1px solid #e2e8f0; margin: 10px 0;" />
-
-        <div class="legend-row">
-          <div class="swatch-stripe"></div> Majority single-family
-        </div>
-        <div class="legend-row">
-          <div class="swatch-solid"></div> Majority multi-family
+        <div class="legend-axis">
+          <span>Low poverty</span>
+          <span>High poverty</span>
         </div>
       </div>
+
+      <hr />
+
+      <div>
+        <p class="legend-title">Majority Housing Type</p>
+        <div class="legend-housing">
+          <div class="legend-row">
+            <div class="swatch-stripe"></div>
+            <span>Single-family</span>
+          </div>
+          <div class="legend-row">
+            <div class="swatch-solid"></div>
+            <span>Multi-family</span>
+          </div>
+        </div>
+      </div>
+
+      <hr />
 
       <div id="info" class="info">
         <h3>Select a neighborhood</h3>
         <p>Click on any neighborhood to see details.</p>
       </div>
+
     </aside>
   </main>
 
