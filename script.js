@@ -100,119 +100,74 @@ const neighborhoodData = {
   "Hyde Park": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 24.1, sf_pct: 48 },
   "Vermont Square": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 31.2, sf_pct: 22 },
   "Vermont Vista": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 29.8, sf_pct: 28 },
-  // Additional West LA
   "Santa Monica": { region: "West LA", status: "Higher income / lower poverty", poverty_pct: 10.2, sf_pct: 38 },
   "Hollywood Hills West": { region: "West LA", status: "Higher income / lower poverty", poverty_pct: 11.1, sf_pct: 74 },
   "Bel-Air": { region: "West LA", status: "Higher income / lower poverty", poverty_pct: 4.2, sf_pct: 88 },
   "Sawtelle": { region: "West LA", status: "Higher income / lower poverty", poverty_pct: 10.8, sf_pct: 22 },
-  "West Adams": { region: "West LA", status: "Mixed income / moderate poverty", poverty_pct: 18.4, sf_pct: 44 },
   "Pico-Robertson": { region: "West LA", status: "Higher income / lower poverty", poverty_pct: 14.2, sf_pct: 28 },
   "Beverlywood": { region: "West LA", status: "Higher income / lower poverty", poverty_pct: 6.1, sf_pct: 71 },
   "Beverly Hills": { region: "West LA", status: "Higher income / lower poverty", poverty_pct: 5.8, sf_pct: 52 },
   "Beverly Grove": { region: "West LA", status: "Higher income / lower poverty", poverty_pct: 9.4, sf_pct: 18 },
   "Carthay": { region: "West LA", status: "Higher income / lower poverty", poverty_pct: 8.8, sf_pct: 41 },
-  "Olympic Park": { region: "West LA", status: "Higher income / lower poverty", poverty_pct: 9.1, sf_pct: 32 },
   "Miracle Mile": { region: "West LA", status: "Higher income / lower poverty", poverty_pct: 11.2, sf_pct: 16 },
-
-  // Additional Central LA
   "East Hollywood": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 26.8, sf_pct: 12 },
   "Thai Town": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 21.8, sf_pct: 11 },
   "Little Armenia": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 20.9, sf_pct: 14 },
   "Rampart Village": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 28.1, sf_pct: 10 },
   "Harvard Heights": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 27.6, sf_pct: 18 },
   "Windsor Square": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 8.9, sf_pct: 68 },
-  "Wilshire Center": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 22.1, sf_pct: 9 },
-  "Koreatown Galleria": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 25.4, sf_pct: 6 },
   "Little Tokyo": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 22.1, sf_pct: 4 },
   "Arts District": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 19.4, sf_pct: 3 },
-  "South Park": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 24.8, sf_pct: 5 },
-  "Fashion District": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 26.2, sf_pct: 4 },
   "Historic Core": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 27.1, sf_pct: 3 },
-  "Wholesale District": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 25.8, sf_pct: 4 },
-  "Boyle": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 24.1, sf_pct: 8 },
-
-  // Additional North LA
+  "Elysian Valley": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 18.9, sf_pct: 44 },
+  "Elysian Park": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 20.1, sf_pct: 38 },
+  "Angelino Heights": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 22.4, sf_pct: 42 },
+  "Victor Heights": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 21.8, sf_pct: 36 },
+  "Solano Canyon": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 19.4, sf_pct: 41 },
+  "Whitley Heights": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 14.8, sf_pct: 62 },
+  "Franklin Hills": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 13.2, sf_pct: 54 },
+  "West Adams": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 18.4, sf_pct: 44 },
   "Hollywood Hills East": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 13.4, sf_pct: 72 },
-  "Tujunga Foothills": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 15.1, sf_pct: 74 },
   "Lake View Terrace": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 18.2, sf_pct: 71 },
   "Shadow Hills": { region: "North LA", status: "Higher income / lower poverty", poverty_pct: 8.1, sf_pct: 88 },
   "Hansen Dam": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 19.4, sf_pct: 65 },
   "Mission Hills": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 20.1, sf_pct: 66 },
   "Panorama City": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 26.4, sf_pct: 38 },
   "North Hills": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 18.8, sf_pct: 58 },
-  "Sepulveda": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 21.2, sf_pct: 44 },
   "Porter Ranch": { region: "North LA", status: "Higher income / lower poverty", poverty_pct: 5.8, sf_pct: 84 },
-  "West Hills North": { region: "North LA", status: "Higher income / lower poverty", poverty_pct: 6.8, sf_pct: 81 },
   "Calabasas": { region: "North LA", status: "Higher income / lower poverty", poverty_pct: 4.1, sf_pct: 79 },
   "Burbank": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 13.4, sf_pct: 54 },
   "Glendale": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 14.6, sf_pct: 48 },
   "Pasadena": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 16.2, sf_pct: 52 },
   "La Crescenta-Montrose": { region: "North LA", status: "Higher income / lower poverty", poverty_pct: 7.6, sf_pct: 78 },
   "Altadena": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 12.8, sf_pct: 72 },
-  "Monrovia": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 15.4, sf_pct: 61 },
-  "Duarte": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 14.8, sf_pct: 58 },
-  "Azusa": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 18.9, sf_pct: 52 },
-  "Glendora": { region: "North LA", status: "Higher income / lower poverty", poverty_pct: 9.2, sf_pct: 71 },
-
-  // Additional East LA
-  "East Los Angeles (unincorporated)": { region: "East LA", status: "Lower income / higher poverty", poverty_pct: 26.1, sf_pct: 36 },
+  "Valley Village": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 14.2, sf_pct: 52 },
+  "Lake Balboa": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 16.8, sf_pct: 64 },
+  "Chatsworth Reservoir": { region: "North LA", status: "Higher income / lower poverty", poverty_pct: 6.1, sf_pct: 84 },
+  "Toluca Lake": { region: "North LA", status: "Higher income / lower poverty", poverty_pct: 9.8, sf_pct: 62 },
+  "Hollywood Knolls": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 11.4, sf_pct: 74 },
+  "Beachwood Canyon": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 12.1, sf_pct: 68 },
+  "Hermon": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 16.8, sf_pct: 54 },
+  "Garvanza": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 19.2, sf_pct: 48 },
   "Rosemead": { region: "East LA", status: "Mixed income / moderate poverty", poverty_pct: 16.8, sf_pct: 54 },
   "El Monte": { region: "East LA", status: "Mixed income / moderate poverty", poverty_pct: 22.4, sf_pct: 44 },
   "South El Monte": { region: "East LA", status: "Lower income / higher poverty", poverty_pct: 24.8, sf_pct: 38 },
   "Baldwin Park": { region: "East LA", status: "Mixed income / moderate poverty", poverty_pct: 20.1, sf_pct: 48 },
   "West Covina": { region: "East LA", status: "Mixed income / moderate poverty", poverty_pct: 13.2, sf_pct: 62 },
-  "La Puente": { region: "East LA", status: "Mixed income / moderate poverty", poverty_pct: 19.8, sf_pct: 52 },
   "Hacienda Heights": { region: "East LA", status: "Mixed income / moderate poverty", poverty_pct: 11.4, sf_pct: 66 },
   "Rowland Heights": { region: "East LA", status: "Mixed income / moderate poverty", poverty_pct: 10.8, sf_pct: 58 },
   "Diamond Bar": { region: "East LA", status: "Higher income / lower poverty", poverty_pct: 7.4, sf_pct: 74 },
-  "Walnut": { region: "East LA", status: "Higher income / lower poverty", poverty_pct: 6.2, sf_pct: 78 },
-  "Industry": { region: "East LA", status: "Mixed income / moderate poverty", poverty_pct: 18.4, sf_pct: 42 },
   "Whittier": { region: "East LA", status: "Mixed income / moderate poverty", poverty_pct: 15.3, sf_pct: 58 },
-  "Santa Fe Springs": { region: "East LA", status: "Mixed income / moderate poverty", poverty_pct: 17.8, sf_pct: 44 },
   "Downey": { region: "East LA", status: "Mixed income / moderate poverty", poverty_pct: 14.7, sf_pct: 52 },
   "Norwalk": { region: "East LA", status: "Mixed income / moderate poverty", poverty_pct: 16.2, sf_pct: 54 },
-  "Cerritos": { region: "East LA", status: "Higher income / lower poverty", poverty_pct: 6.8, sf_pct: 72 },
-  "Artesia": { region: "East LA", status: "Mixed income / moderate poverty", poverty_pct: 14.1, sf_pct: 52 },
   "Lakewood": { region: "East LA", status: "Mixed income / moderate poverty", poverty_pct: 10.4, sf_pct: 68 },
-
-  // Additional South LA
-  "Inglewood (city)": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 24.8, sf_pct: 34 },
-  "West Athens": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 29.4, sf_pct: 52 },
-  "Westmont": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 31.8, sf_pct: 38 },
-  "West Rancho Dominguez": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 27.2, sf_pct: 44 },
-  "Willowbrook": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 32.4, sf_pct: 41 },
-  "Athens": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 30.1, sf_pct: 48 },
-  "Green Meadows": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 29.8, sf_pct: 44 },
-  "Exposition Park": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 28.3, sf_pct: 22 },
-  "Harbor City": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 18.4, sf_pct: 52 },
-  "Harbor Gateway": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 20.1, sf_pct: 48 },
-  "Watts (unincorporated)": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 34.2, sf_pct: 36 },
-  "Long Beach": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 19.8, sf_pct: 38 },
-  "Paramount": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 24.6, sf_pct: 44 },
-  "Bellflower": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 16.8, sf_pct: 48 },
-  "Norwalk South": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 17.4, sf_pct: 52 },
-  "San Pedro": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 18.2, sf_pct: 44 },
-  "Wilmington": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 26.4, sf_pct: 38 },
-  "Lomita": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 12.8, sf_pct: 52 },
-  "Rolling Hills Estates": { region: "South LA", status: "Higher income / lower poverty", poverty_pct: 4.8, sf_pct: 88 },
-  "Palos Verdes Estates": { region: "South LA", status: "Higher income / lower poverty", poverty_pct: 3.9, sf_pct: 91 },
-  "Rancho Palos Verdes": { region: "South LA", status: "Higher income / lower poverty", poverty_pct: 4.2, sf_pct: 86 },
-
-  // Newly visible grey neighborhoods
-  "Valley Village": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 14.2, sf_pct: 52 },
-  "Lake Balboa": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 16.8, sf_pct: 64 },
+  "El Encanto Heights": { region: "East LA", status: "Mixed income / moderate poverty", poverty_pct: 18.4, sf_pct: 58 },
+  "Ramona": { region: "East LA", status: "Lower income / higher poverty", poverty_pct: 24.8, sf_pct: 38 },
   "Beverly Crest": { region: "West LA", status: "Higher income / lower poverty", poverty_pct: 5.2, sf_pct: 82 },
   "Del Rey": { region: "West LA", status: "Higher income / lower poverty", poverty_pct: 11.4, sf_pct: 38 },
-  "Chatsworth Reservoir": { region: "North LA", status: "Higher income / lower poverty", poverty_pct: 6.1, sf_pct: 84 },
   "Central-Alameda": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 33.4, sf_pct: 28 },
   "Chesterfield Square": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 30.8, sf_pct: 42 },
   "Broadway-Manchester": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 31.2, sf_pct: 36 },
-  "West Adams": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 18.4, sf_pct: 44 },
-  "Winnetka": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 16.8, sf_pct: 58 },
-  "Sunland": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 14.7, sf_pct: 76 },
-  "Tujunga": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 16.3, sf_pct: 71 },
-  "Westchester": { region: "West LA", status: "Higher income / lower poverty", poverty_pct: 8.3, sf_pct: 74 },
-  "Playa del Rey": { region: "West LA", status: "Higher income / lower poverty", poverty_pct: 7.8, sf_pct: 61 },
   "Windsor Hills": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 18.2, sf_pct: 62 },
   "View Park": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 12.4, sf_pct: 71 },
   "Crenshaw": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 24.6, sf_pct: 38 },
@@ -221,70 +176,56 @@ const neighborhoodData = {
   "Gramercy Park": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 22.4, sf_pct: 44 },
   "Harvard Park": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 28.9, sf_pct: 40 },
   "Vermont-Slauson": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 29.4, sf_pct: 32 },
-  "Exposition Park": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 28.3, sf_pct: 22 },
-  "University Hills": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 21.4, sf_pct: 38 },
-  "South Park": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 30.8, sf_pct: 18 },
-  "Palms": { region: "West LA", status: "Higher income / lower poverty", poverty_pct: 13.1, sf_pct: 14 },
-  "Mar Vista": { region: "West LA", status: "Higher income / lower poverty", poverty_pct: 9.1, sf_pct: 55 },
-  "Reseda": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 20.5, sf_pct: 52 },
-  "Panorama City": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 26.4, sf_pct: 38 },
-  "North Hills": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 18.8, sf_pct: 58 },
-  "Mission Hills": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 20.1, sf_pct: 66 },
-  "Sepulveda": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 21.2, sf_pct: 44 },
-  "Van Nuys": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 24.7, sf_pct: 38 },
-  "Toluca Lake": { region: "North LA", status: "Higher income / lower poverty", poverty_pct: 9.8, sf_pct: 62 },
-  "Toluca Terrace": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 14.2, sf_pct: 58 },
-  "Toluca Woods": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 12.8, sf_pct: 61 },
-  "Hollywood Knolls": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 11.4, sf_pct: 74 },
-  "Beachwood Canyon": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 12.1, sf_pct: 68 },
-  "Whitley Heights": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 14.8, sf_pct: 62 },
-  "Franklin Hills": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 13.2, sf_pct: 54 },
-  "Laughlin Park": { region: "Central LA", status: "Higher income / lower poverty", poverty_pct: 7.4, sf_pct: 81 },
-  "Spaulding Square": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 14.1, sf_pct: 58 },
   "West Adams Heights": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 21.8, sf_pct: 52 },
   "Baldwin Hills": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 19.4, sf_pct: 58 },
-  "Baldwin Hills Estates": { region: "South LA", status: "Higher income / lower poverty", poverty_pct: 11.2, sf_pct: 74 },
-  "Leimert Park": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 22.4, sf_pct: 42 },
-  "Vermont Knolls": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 30.1, sf_pct: 42 },
-  "Vermont Square": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 31.2, sf_pct: 22 },
   "Westlake South": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 31.4, sf_pct: 8 },
-  "Elysian Valley": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 18.9, sf_pct: 44 },
-  "Elysian Park": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 20.1, sf_pct: 38 },
-  "Angelino Heights": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 22.4, sf_pct: 42 },
-  "Victor Heights": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 21.8, sf_pct: 36 },
-  "Solano Canyon": { region: "Central LA", status: "Mixed income / moderate poverty", poverty_pct: 19.4, sf_pct: 41 },
-  "Boyle": { region: "East LA", status: "Lower income / higher poverty", poverty_pct: 26.8, sf_pct: 32 },
-  "El Encanto Heights": { region: "East LA", status: "Mixed income / moderate poverty", poverty_pct: 18.4, sf_pct: 58 },
-  "Hermon": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 16.8, sf_pct: 54 },
-  "Garvanza": { region: "North LA", status: "Mixed income / moderate poverty", poverty_pct: 19.2, sf_pct: 48 },
-  "Ramona": { region: "East LA", status: "Lower income / higher poverty", poverty_pct: 24.8, sf_pct: 38 },
+  "West Athens": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 29.4, sf_pct: 52 },
+  "Westmont": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 31.8, sf_pct: 38 },
+  "Willowbrook": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 32.4, sf_pct: 41 },
+  "Athens": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 30.1, sf_pct: 48 },
+  "Green Meadows": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 29.8, sf_pct: 44 },
+  "Harbor City": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 18.4, sf_pct: 52 },
+  "Harbor Gateway": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 20.1, sf_pct: 48 },
+  "San Pedro": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 18.2, sf_pct: 44 },
+  "Wilmington": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 26.4, sf_pct: 38 },
+  "Lomita": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 12.8, sf_pct: 52 },
+  "Rancho Palos Verdes": { region: "South LA", status: "Higher income / lower poverty", poverty_pct: 4.2, sf_pct: 86 },
+  "Palos Verdes Estates": { region: "South LA", status: "Higher income / lower poverty", poverty_pct: 3.9, sf_pct: 91 },
   "Willow Brook": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 32.4, sf_pct: 36 },
-  "Watts": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 35.8, sf_pct: 38 },
-  "Compton": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 29.5, sf_pct: 48 },
+  "Paramount": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 24.6, sf_pct: 44 },
+  "Bellflower": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 16.8, sf_pct: 48 },
+  "Long Beach": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 19.8, sf_pct: 38 },
+};
+
+const regionColors = {
+  "West LA":    "#5bb8d4",
+  "Central LA": "#8c96c6",
+  "North LA":   "#6abf8a",
+  "East LA":    "#c060b0",
+  "South LA":   "#e07b39",
 };
 
 window.onload = () => {
   const map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/mapbox/light-v11',
-      center: [-118.30, 34.05],
-      zoom: 9.0,
-      minZoom: 8.0,      // ← can't zoom out past this
-      maxZoom: 13,       // ← can't zoom in past this
-      interactive: true  // ← re-enable interaction so zoom works
+    container: 'map',
+    style: 'mapbox://styles/mapbox/light-v11',
+    center: [-118.42, 34.05],
+    zoom: 9.0,
+    minZoom: 8.8,
+    maxZoom: 13,
+    interactive: true
   });
 
   map.addControl(new mapboxgl.NavigationControl(), 'top-right');
-  map.dragPan.enable();
+  map.dragPan.disable();
   map.dragRotate.disable();
   map.keyboard.disable();
-
 
   map.on('load', () => {
     const info = document.getElementById('info');
     let hoveredId = null;
+    let activeId = null;
 
-    // Stripe pattern for single-family majority neighborhoods
     try {
       const stripeCanvas = document.createElement('canvas');
       stripeCanvas.width = 8;
@@ -310,20 +251,19 @@ window.onload = () => {
         return r.json();
       })
       .then(data => {
-        data.features = data.features
-          .map((f, i) => {
-            f.id = i;
-            const d = neighborhoodData[f.properties.name];
-            if (d) {
-              f.properties = { ...f.properties, ...d };
-            } else {
-              f.properties.region = 'Unknown';
-              f.properties.poverty_pct = 0;
-              f.properties.sf_pct = 0;
-              f.properties.status = 'Data not available';
-            }
-            return f;
-          });
+        data.features = data.features.map((f, i) => {
+          f.id = i;
+          const d = neighborhoodData[f.properties.name];
+          if (d) {
+            f.properties = { ...f.properties, ...d };
+          } else {
+            f.properties.region = 'Unknown';
+            f.properties.poverty_pct = 0;
+            f.properties.sf_pct = 0;
+            f.properties.status = 'Data not available';
+          }
+          return f;
+        });
 
         map.addSource('la-neighborhoods', { type: 'geojson', data });
 
@@ -346,7 +286,12 @@ window.onload = () => {
               ['interpolate', ['linear'], ['get', 'poverty_pct'], 4, '#fdebd8', 18, '#e07b39', 36, '#8c3500'],
               '#ccc'
             ],
-            'fill-opacity': ['case', ['boolean', ['feature-state', 'hover'], false], 1.0, 0.85]
+            'fill-opacity': [
+              'case',
+              ['boolean', ['feature-state', 'active'], false], 1.0,
+              ['boolean', ['feature-state', 'hover'], false], 0.95,
+              0.82
+            ]
           }
         });
 
@@ -355,6 +300,17 @@ window.onload = () => {
           type: 'line',
           source: 'la-neighborhoods',
           paint: { 'line-color': '#ffffff', 'line-width': 1.2 }
+        });
+
+        // Active outline — thicker border on clicked neighborhood
+        map.addLayer({
+          id: 'neighborhood-active-outline',
+          type: 'line',
+          source: 'la-neighborhoods',
+          paint: {
+            'line-color': '#1e3a5f',
+            'line-width': ['case', ['boolean', ['feature-state', 'active'], false], 2.5, 0]
+          }
         });
 
         map.addLayer({
@@ -383,34 +339,81 @@ window.onload = () => {
           }
         });
 
+        function showInfo(f) {
+          const region = f.properties.region;
+          const color = regionColors[region] || '#aaa';
+          const sfPct = f.properties.sf_pct;
+          const mfPct = 100 - sfPct;
+          const poverty = f.properties.poverty_pct;
+
+          if (region === 'Unknown') {
+            info.innerHTML = `
+              <h3>${f.properties.name}</h3>
+              <p style="color:#94a3b8;">No data available for this area.</p>
+            `;
+            return;
+          }
+
+          info.innerHTML = `
+            <h3>${f.properties.name}</h3>
+            <p class="info-region">
+              <span class="region-dot" style="background:${color}"></span>
+              ${region}
+            </p>
+            <p class="info-status">${f.properties.status}</p>
+            <div class="info-stat">
+              <span class="info-label">Poverty rate</span>
+              <span class="info-value">${poverty}%</span>
+            </div>
+            <div class="info-stat">
+              <span class="info-label">🏠 Single-family</span>
+              <span class="info-value">${sfPct}%</span>
+            </div>
+            <div class="info-stat">
+              <span class="info-label">🏢 Multi-family</span>
+              <span class="info-value">${mfPct}%</span>
+            </div>
+          `;
+        }
+
+        // Hover — just highlight
         map.on('mousemove', 'neighborhood-fill', (e) => {
           const f = e.features[0];
           map.getCanvas().style.cursor = 'pointer';
-          if (hoveredId !== null) map.setFeatureState({ source: 'la-neighborhoods', id: hoveredId }, { hover: false });
+          if (hoveredId !== null) {
+            map.setFeatureState({ source: 'la-neighborhoods', id: hoveredId }, { hover: false });
+          }
           hoveredId = f.id;
           map.setFeatureState({ source: 'la-neighborhoods', id: hoveredId }, { hover: true });
-          info.innerHTML = `
-            <h3>${f.properties.name}</h3>
-            <p><strong>Region:</strong> ${f.properties.region}</p>
-            <p>${f.properties.status}</p>
-            <p><strong>Poverty rate:</strong> ${f.properties.poverty_pct}%</p>
-            <p>🏠 Single-family: ${f.properties.sf_pct}%&nbsp;&nbsp;🏢 Multi-family: ${100 - f.properties.sf_pct}%</p>
-          `;
         });
 
         map.on('mouseleave', 'neighborhood-fill', () => {
           map.getCanvas().style.cursor = '';
-          if (hoveredId !== null) map.setFeatureState({ source: 'la-neighborhoods', id: hoveredId }, { hover: false });
+          if (hoveredId !== null) {
+            map.setFeatureState({ source: 'la-neighborhoods', id: hoveredId }, { hover: false });
+          }
           hoveredId = null;
-          info.innerHTML = '<h3>Region info</h3><p>Hover over a region</p>';
         });
 
+        // Click — make active and show details
         map.on('click', 'neighborhood-fill', (e) => {
           const f = e.features[0];
-          new mapboxgl.Popup()
-            .setLngLat(e.lngLat)
-            .setHTML(`<strong>${f.properties.name}</strong><br/><em>${f.properties.region}</em><br/>${f.properties.status}<br/>Poverty: ${f.properties.poverty_pct}%<br/>🏠 SF: ${f.properties.sf_pct}% / 🏢 MF: ${100 - f.properties.sf_pct}%`)
-            .addTo(map);
+
+          // Deactivate previous
+          if (activeId !== null) {
+            map.setFeatureState({ source: 'la-neighborhoods', id: activeId }, { active: false });
+          }
+
+          // If clicking same one, deactivate
+          if (activeId === f.id) {
+            activeId = null;
+            info.innerHTML = '<h3>Select a neighborhood</h3><p>Click on any neighborhood to see details.</p>';
+            return;
+          }
+
+          activeId = f.id;
+          map.setFeatureState({ source: 'la-neighborhoods', id: activeId }, { active: true });
+          showInfo(f);
         });
       })
       .catch(err => {

@@ -10,7 +10,6 @@ body {
   background: #f0f4f8;
 }
 
-/* ── Header ── */
 .topbar {
   background: linear-gradient(135deg, #1e3a5f 0%, #2d6a9f 100%);
   color: white;
@@ -32,7 +31,6 @@ body {
   opacity: 0.82;
 }
 
-/* ── Layout ── */
 .app {
   display: flex;
   flex: 1;
@@ -42,7 +40,6 @@ body {
   overflow: hidden;
 }
 
-/* ── Map ── */
 #map {
   flex: 1;
   height: calc(100vh - 110px);
@@ -51,7 +48,6 @@ body {
   box-shadow: 0 6px 28px rgba(0,0,0,0.13);
 }
 
-/* ── Sidebar ── */
 .sidebar {
   width: 270px;
   background: rgba(255, 255, 255, 0.92);
@@ -61,107 +57,95 @@ body {
   box-shadow: 0 6px 28px rgba(0,0,0,0.10);
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 14px;
   height: fit-content;
   align-self: flex-start;
 }
 
-.sidebar h2 {
-  margin: 0 0 14px;
-  font-size: 0.8rem;
+/* ── Legend section titles ── */
+.legend-title {
+  font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #64748b;
+  margin: 0 0 10px;
 }
 
-/* ── Legend ── */
-.legend {
+/* ── Poverty legend ── */
+.legend-region {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 6px;
+  gap: 8px;
+  margin-bottom: 4px;
 }
 
 .legend-row {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: 0.9rem;
+  gap: 10px;
+  font-size: 0.88rem;
   color: #334155;
 }
 
-.swatch {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;        /* ← circles! */
-  flex-shrink: 0;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+.swatch-gradient {
+  flex: 1;
+  height: 12px;
+  border-radius: 6px;
 }
 
-.swatch-gradient {
-  width: 80px;
-  height: 14px;
-  border-radius: 7px;
-  margin-right: 10px;
-  flex-shrink: 0;
-}
 .west-grad    { background: linear-gradient(to right, #dff4fb, #2a8fb5); }
 .central-grad { background: linear-gradient(to right, #dfe2f5, #2e3a8c); }
 .north-grad   { background: linear-gradient(to right, #dff5e8, #1e6b40); }
 .east-grad    { background: linear-gradient(to right, #f5d0f0, #6b0060); }
 .south-grad   { background: linear-gradient(to right, #fdebd8, #8c3500); }
 
-.legend-labels {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.75rem;
-  color: #64748b;
-  margin-top: 8px;
-  padding: 0 2px;
+.legend-region-label {
+  width: 72px;
+  font-size: 0.82rem;
+  color: #334155;
+  flex-shrink: 0;
 }
 
-.legend-gradient {
-  height: 16px;
-  border-radius: 8px;
-  background: linear-gradient(to right, #f7f4ff, #cfc8f0, #9e8fd8, #6b3fa0, #2d0057);
-  margin-bottom: 6px;
-}
-.legend-labels {
+.legend-axis {
   display: flex;
   justify-content: space-between;
-  font-size: 0.78rem;
-  color: #64748b;
+  font-size: 0.72rem;
+  color: #94a3b8;
+  padding: 0 0 0 82px;
+  margin-top: 2px;
+}
+
+/* ── Housing type legend ── */
+.legend-housing {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .swatch-stripe {
   width: 18px;
   height: 18px;
   border-radius: 4px;
-  margin-right: 10px;
   flex-shrink: 0;
   background: repeating-linear-gradient(
-    -45deg,
-    #aaa,
-    #aaa 2px,
-    #ddd 2px,
-    #ddd 6px
+    -45deg, #aaa, #aaa 2px, #ddd 2px, #ddd 6px
   );
 }
+
 .swatch-solid {
   width: 18px;
   height: 18px;
   border-radius: 4px;
-  margin-right: 10px;
   flex-shrink: 0;
-  background: #aaa;
+  background: #bbb;
 }
 
 /* ── Divider ── */
 .sidebar hr {
   border: none;
   border-top: 1px solid #e2e8f0;
-  margin: 12px 0;
+  margin: 0;
 }
 
 /* ── Info Panel ── */
@@ -170,29 +154,52 @@ body {
   border: 1px solid #e2e8f0;
   border-radius: 14px;
   padding: 14px 16px;
-  min-height: 70px;
-  transition: all 0.2s ease;
+  min-height: 160px;
 }
 
 .info h3 {
-  margin: 0 0 6px;
+  margin: 0 0 8px;
   font-size: 1rem;
   font-weight: 700;
   color: #1e3a5f;
 }
 
-.info p {
-  margin: 0 0 4px;
+.info-region {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 6px;
   font-size: 0.85rem;
   color: #475569;
-  line-height: 1.5;
 }
 
-.info p:last-child { margin-bottom: 0; }
+.region-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
 
-.info strong { color: #1e3a5f; }
+.info-status {
+  font-size: 0.82rem;
+  color: #64748b;
+  margin: 0 0 10px;
+  font-style: italic;
+}
 
-/* ── Mapbox popup ── */
+.info-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  padding: 4px 0;
+  border-top: 1px solid #f1f5f9;
+}
+
+.info-label { color: #64748b; }
+.info-value { font-weight: 600; color: #1e3a5f; }
+
+/* ── Mapbox ── */
 .mapboxgl-popup-content {
   border-radius: 14px !important;
   padding: 14px 18px !important;
@@ -203,7 +210,6 @@ body {
   line-height: 1.6;
 }
 
-/* ── Nav control ── */
 .mapboxgl-ctrl-group {
   border-radius: 12px !important;
   overflow: hidden;
