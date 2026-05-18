@@ -195,6 +195,63 @@ const neighborhoodData = {
   "Paramount": { region: "South LA", status: "Lower income / higher poverty", poverty_pct: 24.6, sf_pct: 44 },
   "Bellflower": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 16.8, sf_pct: 48 },
   "Long Beach": { region: "South LA", status: "Mixed income / moderate poverty", poverty_pct: 19.8, sf_pct: 38 },
+// Antelope Valley / North County
+  "Lancaster":                    { region:"North LA", status:"Mixed income / moderate poverty", poverty_pct:22.1, sf_pct:64 },
+  "Quartz Hill":                  { region:"North LA", status:"Mixed income / moderate poverty", poverty_pct:16.4, sf_pct:72 },
+  "Northwest Palmdale":           { region:"North LA", status:"Mixed income / moderate poverty", poverty_pct:18.2, sf_pct:68 },
+  "Desert View Highlands":        { region:"North LA", status:"Mixed income / moderate poverty", poverty_pct:21.4, sf_pct:71 },
+  "Lake Los Angeles":             { region:"North LA", status:"Mixed income / moderate poverty", poverty_pct:24.8, sf_pct:74 },
+  "Sun Village":                  { region:"North LA", status:"Mixed income / moderate poverty", poverty_pct:26.1, sf_pct:69 },
+  "Littlerock":                   { region:"North LA", status:"Mixed income / moderate poverty", poverty_pct:22.8, sf_pct:72 },
+  "Southeast Antelope Valley":    { region:"North LA", status:"Mixed income / moderate poverty", poverty_pct:23.4, sf_pct:74 },
+  "Leona Valley":                 { region:"North LA", status:"Higher income / lower poverty",   poverty_pct:9.8,  sf_pct:88 },
+  "Elizabeth Lake":               { region:"North LA", status:"Higher income / lower poverty",   poverty_pct:10.2, sf_pct:86 },
+  "Green Valley":                 { region:"North LA", status:"Higher income / lower poverty",   poverty_pct:8.4,  sf_pct:89 },
+
+  // Santa Clarita Valley
+  "Santa Clarita":                { region:"North LA", status:"Higher income / lower poverty",   poverty_pct:8.1,  sf_pct:72 },
+  "Castaic":                      { region:"North LA", status:"Higher income / lower poverty",   poverty_pct:9.4,  sf_pct:76 },
+  "Val Verde":                    { region:"North LA", status:"Mixed income / moderate poverty", poverty_pct:14.2, sf_pct:74 },
+  "Castaic Canyons":              { region:"North LA", status:"Higher income / lower poverty",   poverty_pct:7.8,  sf_pct:84 },
+  "Ridge Route":                  { region:"North LA", status:"Higher income / lower poverty",   poverty_pct:8.2,  sf_pct:82 },
+
+  // Foothills / Unincorporated
+  "Tujunga Canyons":              { region:"North LA", status:"Mixed income / moderate poverty", poverty_pct:13.4, sf_pct:78 },
+  "Acton":                        { region:"North LA", status:"Higher income / lower poverty",   poverty_pct:9.1,  sf_pct:86 },
+  "Agua Dulce":                   { region:"North LA", status:"Higher income / lower poverty",   poverty_pct:7.6,  sf_pct:88 },
+  "Unincorporated Santa Susana Mountains": { region:"North LA", status:"Higher income / lower poverty", poverty_pct:8.8, sf_pct:87 },
+  "Unincorporated Santa Monica Mountains": { region:"West LA",  status:"Higher income / lower poverty", poverty_pct:6.2, sf_pct:89 },
+  "Angeles Crest":                { region:"North LA", status:"Higher income / lower poverty",   poverty_pct:7.2,  sf_pct:84 },
+  "Sepulveda Basin":              { region:"North LA", status:"Mixed income / moderate poverty", poverty_pct:14.8, sf_pct:58 },
+
+  // West side unincorporated
+  "Agoura Hills":                 { region:"West LA",  status:"Higher income / lower poverty",   poverty_pct:5.8,  sf_pct:82 },
+  "Hidden Hills":                 { region:"West LA",  status:"Higher income / lower poverty",   poverty_pct:3.2,  sf_pct:96 },
+  "Malibu":                       { region:"West LA",  status:"Higher income / lower poverty",   poverty_pct:3.5,  sf_pct:91 },
+  "Fillmore":                     { region:"North LA", status:"Mixed income / moderate poverty", poverty_pct:18.4, sf_pct:62 },
+
+  // East SGV
+  "Sierra Madre":                 { region:"East LA",  status:"Higher income / lower poverty",   poverty_pct:7.4,  sf_pct:78 },
+  "Arcadia":                      { region:"East LA",  status:"Higher income / lower poverty",   poverty_pct:9.2,  sf_pct:62 },
+  "Irwindale":                    { region:"East LA",  status:"Mixed income / moderate poverty", poverty_pct:16.8, sf_pct:54 },
+  "Avocado Heights":              { region:"East LA",  status:"Mixed income / moderate poverty", poverty_pct:17.4, sf_pct:62 },
+  "South San Jose Hills":         { region:"East LA",  status:"Mixed income / moderate poverty", poverty_pct:19.8, sf_pct:58 },
+  "Charter Oak":                  { region:"East LA",  status:"Mixed income / moderate poverty", poverty_pct:14.2, sf_pct:64 },
+  "San Dimas":                    { region:"East LA",  status:"Higher income / lower poverty",   poverty_pct:8.8,  sf_pct:72 },
+  "La Habra Heights":             { region:"East LA",  status:"Higher income / lower poverty",   poverty_pct:5.4,  sf_pct:88 },
+  "South Diamond Bar":            { region:"East LA",  status:"Higher income / lower poverty",   poverty_pct:6.8,  sf_pct:76 },
+  "East La Mirada":               { region:"East LA",  status:"Mixed income / moderate poverty", poverty_pct:13.4, sf_pct:66 },
+  "La Mirada":                    { region:"East LA",  status:"Mixed income / moderate poverty", poverty_pct:11.8, sf_pct:68 },
+  "Pomona":                       { region:"East LA",  status:"Mixed income / moderate poverty", poverty_pct:22.8, sf_pct:48 },
+  "Ramona":                       { region:"East LA",  status:"Lower income / higher poverty",   poverty_pct:24.8, sf_pct:38 },
+  "Claremont":                    { region:"East LA",  status:"Higher income / lower poverty",   poverty_pct:9.4,  sf_pct:66 },
+  "Duarte":                       { region:"North LA", status:"Mixed income / moderate poverty", poverty_pct:14.8, sf_pct:58 },
+  "Azusa":                        { region:"East LA",  status:"Mixed income / moderate poverty", poverty_pct:18.9, sf_pct:52 },
+
+  // South Bay unincorporated
+  "Alondra Park":                 { region:"South LA", status:"Mixed income / moderate poverty", poverty_pct:20.4, sf_pct:52 },
+  "Del Aire":                     { region:"South LA", status:"Mixed income / moderate poverty", poverty_pct:18.8, sf_pct:56 },
+  "Signal Hill":                  { region:"South LA", status:"Mixed income / moderate poverty", poverty_pct:16.2, sf_pct:42 },
 };
 
 const regionColors = {
