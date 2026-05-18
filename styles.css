@@ -213,3 +213,59 @@ body {
   overflow: hidden;
   box-shadow: 0 3px 12px rgba(0,0,0,0.12) !important;
 }
+.intro-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 30, 60, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-box {
+  background: white;
+  border-radius: 20px;
+  padding: 36px 40px;
+  max-width: 480px;
+  width: 90%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.intro-box h2 {
+  margin: 0 0 16px;
+  font-size: 1.4rem;
+  color: #1e3a5f;
+}
+
+.intro-box p {
+  font-size: 0.92rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0 0 12px;
+}
+
+.intro-box ul {
+  font-size: 0.92rem;
+  color: #475569;
+  line-height: 1.8;
+  margin: 0 0 16px;
+  padding-left: 20px;
+}
+
+.intro-button {
+  background: linear-gradient(135deg, #1e3a5f, #2d6a9f);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+
+.intro-button:hover {
+  opacity: 0.9;
+}

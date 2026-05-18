@@ -217,9 +217,7 @@ window.onload = () => {
   });
 
   map.addControl(new mapboxgl.NavigationControl(), 'top-right');
-  map.dragPan.disable();
-  map.dragRotate.disable();
-  map.keyboard.disable();
+ 
 
   map.on('load', () => {
     const info = document.getElementById('info');
@@ -420,4 +418,7 @@ window.onload = () => {
         info.innerHTML = '<h3 style="color:red">Error: ' + err.message + '</h3>';
       });
   });
-};
+
+};document.getElementById('intro-close').addEventListener('click', () => {
+  document.getElementById('intro-overlay').style.display = 'none';
+});

@@ -11,6 +11,20 @@
 </head>
 
 <body>
+  <div id="intro-overlay" class="intro-overlay">
+    <div class="intro-box">
+      <h2>Los Angeles Socioeconomic Map</h2>
+      <p>This map visualizes socioeconomic patterns across Los Angeles County neighborhoods, combining two key datasets:
+      </p>
+      <ul>
+        <li><strong>Poverty level</strong> — shown by color intensity within each region</li>
+        <li><strong>Housing type</strong> — striped areas are majority single-family, solid areas are majority
+          multi-family</li>
+      </ul>
+      <p>Click any neighborhood to see detailed statistics in the sidebar.</p>
+      <button id="intro-close" class="intro-button">Explore the map →</button>
+    </div>
+  </div>
   <header class="topbar">
     <h1>Los Angeles Socioeconomic Map</h1>
     <p>Compare socioeconomic patterns across West, Central, and East LA</p>
@@ -19,58 +33,58 @@
   <main class="app">
     <section id="map"></section>
 
- <aside class="sidebar">
+    <aside class="sidebar">
 
-  <div class="legend-box">
-    <p class="legend-title">Poverty Level</p>
-    <div class="legend-region">
-      <div class="legend-row">
-        <span class="legend-region-label">West LA</span>
-        <div class="swatch-gradient west-grad"></div>
+      <div class="legend-box">
+        <p class="legend-title">Poverty Level</p>
+        <div class="legend-region">
+          <div class="legend-row">
+            <span class="legend-region-label">West LA</span>
+            <div class="swatch-gradient west-grad"></div>
+          </div>
+          <div class="legend-row">
+            <span class="legend-region-label">Central LA</span>
+            <div class="swatch-gradient central-grad"></div>
+          </div>
+          <div class="legend-row">
+            <span class="legend-region-label">North LA</span>
+            <div class="swatch-gradient north-grad"></div>
+          </div>
+          <div class="legend-row">
+            <span class="legend-region-label">East LA</span>
+            <div class="swatch-gradient east-grad"></div>
+          </div>
+          <div class="legend-row">
+            <span class="legend-region-label">South LA</span>
+            <div class="swatch-gradient south-grad"></div>
+          </div>
+        </div>
+        <div class="legend-axis">
+          <span>Low poverty</span>
+          <span>High poverty</span>
+        </div>
       </div>
-      <div class="legend-row">
-        <span class="legend-region-label">Central LA</span>
-        <div class="swatch-gradient central-grad"></div>
-      </div>
-      <div class="legend-row">
-        <span class="legend-region-label">North LA</span>
-        <div class="swatch-gradient north-grad"></div>
-      </div>
-      <div class="legend-row">
-        <span class="legend-region-label">East LA</span>
-        <div class="swatch-gradient east-grad"></div>
-      </div>
-      <div class="legend-row">
-        <span class="legend-region-label">South LA</span>
-        <div class="swatch-gradient south-grad"></div>
-      </div>
-    </div>
-    <div class="legend-axis">
-      <span>Low poverty</span>
-      <span>High poverty</span>
-    </div>
-  </div>
 
-  <div class="legend-box">
-    <p class="legend-title">Majority Housing Type</p>
-    <div class="legend-housing">
-      <div class="legend-row-housing">
-        <div class="swatch-stripe"></div>
-        <span>Single-family</span>
+      <div class="legend-box">
+        <p class="legend-title">Majority Housing Type</p>
+        <div class="legend-housing">
+          <div class="legend-row-housing">
+            <div class="swatch-stripe"></div>
+            <span>Single-family</span>
+          </div>
+          <div class="legend-row-housing">
+            <div class="swatch-solid"></div>
+            <span>Multi-family</span>
+          </div>
+        </div>
       </div>
-      <div class="legend-row-housing">
-        <div class="swatch-solid"></div>
-        <span>Multi-family</span>
+
+      <div id="info" class="info">
+        <h3>Select a neighborhood</h3>
+        <p>Click on any neighborhood to see details.</p>
       </div>
-    </div>
-  </div>
 
-  <div id="info" class="info">
-    <h3>Select a neighborhood</h3>
-    <p>Click on any neighborhood to see details.</p>
-  </div>
-
-</aside>
+    </aside>
   </main>
 
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.20.0/mapbox-gl.js"></script>
