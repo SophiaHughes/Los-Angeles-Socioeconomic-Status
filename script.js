@@ -1,5 +1,5 @@
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2h1Z2hlczU4IiwiYSI6ImNtb2tzanJxajAzaXkyb3B5YTU0YWo0dncifQ.hhJVBWVqUoE40kEsf0tPfQ';
-
+//Lists out the data assumptions on housing composition and poverty level across neighborhoods
 const neighborhoodData = {
   "Bel Air": { region: "West LA", status: "Higher income / lower poverty", poverty_pct: 4.2, sf_pct: 88 },
   "Brentwood": { region: "West LA", status: "Higher income / lower poverty", poverty_pct: 5.1, sf_pct: 72 },
@@ -287,6 +287,7 @@ const neighborhoodData = {
   "Simi Valley":                  { region:"North LA", status:"Higher income / lower poverty",   poverty_pct:7.8,  sf_pct:76 },
 };
 
+// Gives each region of LA a specific color designation
 const regionColors = {
   "West LA":    "#5bb8d4",
   "Central LA": "#8c96c6",
@@ -295,6 +296,7 @@ const regionColors = {
   "South LA":   "#e07b39",
 };
 
+// Sets up the appearance of the map when it is first opened up 
 window.onload = () => {
   const map = new mapboxgl.Map({
     container: 'map',
@@ -308,7 +310,7 @@ window.onload = () => {
 
   map.addControl(new mapboxgl.NavigationControl(), 'top-right');
  
-
+// Creates stipes for housing types and formats the stripes
   map.on('load', () => {
     const info = document.getElementById('info');
     let hoveredId = null;
