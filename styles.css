@@ -54,7 +54,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  height: fit-content;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
   align-self: flex-start;
 }
 
